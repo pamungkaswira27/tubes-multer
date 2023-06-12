@@ -14,12 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _question: Nice to meet you Budi, How are you?
   _answers:
-  - Nice to meet you too. I'm fine, how about you?
-  - Oh yeah, I'm fine and you?
-  - Thank you, I'm happy without you
+  - Question: Nice to meet you too. I'm fine, how are you?
+    IsCorrect: 1
+  - Question: Oh yeah, I'm fine and you?
+    IsCorrect: 0
+  - Question: Thank you, I'm happy without you
+    IsCorrect: 0
   _translatedQuestion: Senang bertemu dengan Anda Budi, Apa kabar anda?
   _translatedAnswers:
   - Senang bertemu denganmu juga. Saya baik-baik saja, bagaimana dengan Anda?
   - Oh ya, saya baik-baik saja dan Anda?
   - Terima kasih, aku bahagia tanpamu
-  _correctAnswerIndex: 0

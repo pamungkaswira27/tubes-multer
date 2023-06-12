@@ -14,9 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _question: Hello, good morning
   _answers:
-  - Hi, good morning
-  - Hi, good night
-  - Hi, good evening
+  - Question: Hi, good morning
+    IsCorrect: 1
+  - Question: Hi, good night
+    IsCorrect: 0
+  - Question: Hi, good evening
+    IsCorrect: 0
   _translatedQuestion: Halo, selamat pagi
   _translatedAnswers:
   - Hi, selamat pagi

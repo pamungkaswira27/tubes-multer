@@ -34,4 +34,18 @@ public class QuizManager : MonoBehaviour
         _questionIndex++;
         _currentQuestion = _levelData.GetQuestion(_questionIndex);
     }
+
+    public void AnswerQuestion(int answerIndex)
+    {
+        if (_currentQuestion == null) return;
+
+        if (_currentQuestion.GetAnswer(answerIndex).IsCorrect)
+        {
+            Debug.Log("True");
+        }
+        else
+        {
+            Debug.Log("False");
+        }
+    }
 }

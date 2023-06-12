@@ -14,12 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _question: My name is Ashley, what is your name?
   _answers:
-  - May be Budi
-  - My name is Budi
-  - Mine is Budi
+  - Question: May be Budi
+    IsCorrect: 0
+  - Question: My name is Budi
+    IsCorrect: 1
+  - Question: Mine is Budi
+    IsCorrect: 0
   _translatedQuestion: Nama saya Ashley, siapa nama anda?
   _translatedAnswers:
   - Mungkin Budi
   - Nama saya Budi
   - Saya Budi
-  _correctAnswerIndex: 1

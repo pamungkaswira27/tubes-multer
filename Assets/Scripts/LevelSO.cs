@@ -10,4 +10,9 @@ public class LevelSO : ScriptableObject
     {
         return _questions[index];
     }
+
+    public int GetQuestionCount()
+    {
+        return _questions.Length;
+    }
 }

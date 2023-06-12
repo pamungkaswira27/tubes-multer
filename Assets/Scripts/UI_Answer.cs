@@ -26,10 +26,12 @@ public class UI_Answer : MonoBehaviour
             GameObject answerButton = Instantiate(_answerButtonPrefab, _answerParent);
             GameObject translatedAnswer = Instantiate(_translatedAnswerPrefab, _answerParent);
 
+            answerButton.GetComponent<UI_AnswerButton>().SetAnswerIndex(i);
+
             _answerText = answerButton.GetComponentInChildren<TextMeshProUGUI>();
             _translatedAnswerText = translatedAnswer.GetComponentInChildren<TextMeshProUGUI>();
 
-            _answerText.text = QuizManager.Instance.GetCurrentQuestion().GetAnswer(i);
+            _answerText.text = QuizManager.Instance.GetCurrentQuestion().GetAnswer(i).Question;
             _translatedAnswerText.text = QuizManager.Instance.GetCurrentQuestion().GetTranslatedAnswer(i);
 
             translatedAnswer.SetActive(false);
