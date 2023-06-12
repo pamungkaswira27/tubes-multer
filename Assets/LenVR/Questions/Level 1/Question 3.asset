@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b55b0c20aca517408f18c03647e0997, type: 3}
+  m_Name: Question 3
+  m_EditorClassIdentifier: 
+  _question: Nice to meet you Budi, How are you?
+  _answers:
+  - Nice to meet you too. I'm fine, how about you?
+  - Oh yeah, I'm fine and you?
+  - Thank you, I'm happy without you
+  _translatedQuestion: Senang bertemu dengan Anda Budi, Apa kabar anda?
+  _translatedAnswers:
+  - Senang bertemu denganmu juga. Saya baik-baik saja, bagaimana dengan Anda?
+  - Oh ya, saya baik-baik saja dan Anda?
+  - Terima kasih, aku bahagia tanpamu
+  _correctAnswerIndex: 0
