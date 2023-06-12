@@ -37,4 +37,9 @@ public class QuestionSO : ScriptableObject
     {
         return _correctAnswerIndex;
     }
+
+    public int GetAnswerCount()
+    {
+        return _answers.Length;
+    }
 }
