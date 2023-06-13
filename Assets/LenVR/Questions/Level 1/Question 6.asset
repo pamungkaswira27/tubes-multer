@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b55b0c20aca517408f18c03647e0997, type: 3}
   m_Name: Question 6
   m_EditorClassIdentifier: 
-  _question: Ah... and you live at?
+  _question: Wow... and you live at?
   _answers:
   - Question: I live in Bandung, and you?
     IsCorrect: 1
@@ -25,3 +25,6 @@ MonoBehaviour:
   - Saya tinggal di Bandung, dan Anda?
   - Di mana Anda tinggal juga?
   - Hm... Saya tidak tahu
+  _questionVoiceOverClip: {fileID: 8300000, guid: da8d45f2f0028884ebffd64b5c7d099a,
+    type: 3}
+  _answerVoiceOverClip: []

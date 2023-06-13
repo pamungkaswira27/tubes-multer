@@ -1,11 +1,14 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UI_Answer : MonoBehaviour
 {
     [SerializeField] GameObject _answerButtonPrefab;
     [SerializeField] GameObject _translatedAnswerPrefab;
     [SerializeField] Transform _answerParent;
+
+    QuestionSO _currentQuestion;
 
     TextMeshProUGUI _answerText;
     TextMeshProUGUI _translatedAnswerText;
@@ -15,6 +18,7 @@ public class UI_Answer : MonoBehaviour
     void OnEnable()
     {
         EventManager.OnCorrectAnswerSelected += DisplayAnswer;
+        EventManager.OnWrongAnswerSelected += DisplayAnswer;
     }
 
     void Start()
@@ -25,6 +29,7 @@ public class UI_Answer : MonoBehaviour
     void OnDisable()
     {
         EventManager.OnCorrectAnswerSelected -= DisplayAnswer;
+        EventManager.OnWrongAnswerSelected -= DisplayAnswer;
     }
 
     void DisplayAnswer()
@@ -32,9 +37,12 @@ public class UI_Answer : MonoBehaviour
         ClearAnswer();
 
         _answerCount = QuizManager.Instance.GetCurrentQuestion().GetAnswerCount();
+        _currentQuestion = QuizManager.Instance.GetCurrentQuestion();
 
         for (int i = 0; i < _answerCount; i++)
         {
+            int voiceIndex = i;
+
             GameObject answerButton = Instantiate(_answerButtonPrefab, _answerParent);
             GameObject translatedAnswer = Instantiate(_translatedAnswerPrefab, _answerParent);
 
@@ -45,6 +53,9 @@ public class UI_Answer : MonoBehaviour
 
             _answerText.text = QuizManager.Instance.GetCurrentQuestion().GetAnswer(i).Question;
             _translatedAnswerText.text = QuizManager.Instance.GetCurrentQuestion().GetTranslatedAnswer(i);
+
+            Button voiceOverButton = answerButton.GetComponentsInChildren<Button>()[1];
+            voiceOverButton.onClick.AddListener(() => AudioManager.Instance.PlayVoiceOver(_currentQuestion.GetAnswerVoiceOverClip(voiceIndex)));
 
             translatedAnswer.SetActive(false);
         }

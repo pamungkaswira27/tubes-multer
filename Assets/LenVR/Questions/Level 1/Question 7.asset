@@ -27,3 +27,6 @@ MonoBehaviour:
   - Dengan senang hati, saya menghargai
   - Okey Rika, sampai jumpa!
   - Sama-sama, Rika. Senang berbicara dengan Anda juga. Sampai jumpa!
+  _questionVoiceOverClip: {fileID: 8300000, guid: fc842d52b4f0de243a49dc8d2fb8110c,
+    type: 3}
+  _answerVoiceOverClip: []

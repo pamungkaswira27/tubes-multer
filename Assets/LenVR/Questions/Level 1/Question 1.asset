@@ -25,4 +25,9 @@ MonoBehaviour:
   - Hi, selamat pagi
   - Hi, selamat malam
   - Hi, selamat sore
-  _correctAnswerIndex: 0
+  _questionVoiceOverClip: {fileID: 8300000, guid: 2db49db1dc67f2640aa93b14b0c3830d,
+    type: 3}
+  _answerVoiceOverClip:
+  - {fileID: 8300000, guid: 49bbe48be7e0f5a4aa9126eebdeb53fe, type: 3}
+  - {fileID: 8300000, guid: 3285f9f1ff7b1554ebbdece03c4c913f, type: 3}
+  - {fileID: 8300000, guid: a99dde48f84acab42b69a99f11de4eb0, type: 3}

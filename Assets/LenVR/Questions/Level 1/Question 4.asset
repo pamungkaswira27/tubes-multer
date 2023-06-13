@@ -25,3 +25,6 @@ MonoBehaviour:
   - Aku baik, apakah Anda bertanya?
   - Saya tinggal di Indonesia.
   - Oh ya, tentu saja boleh. Saya dari Indonesia, dan Anda?
+  _questionVoiceOverClip: {fileID: 8300000, guid: 95493b86907d0ab4fb0da006aa0d0d68,
+    type: 3}
+  _answerVoiceOverClip: []

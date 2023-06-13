@@ -26,3 +26,6 @@ MonoBehaviour:
   - Saya lahir pada tahun 2000
   - Saya juga berusia 20 tahun
   - Berapa usia Anda?
+  _questionVoiceOverClip: {fileID: 8300000, guid: 551c71e910793cb4d9c8a6385898b4ae,
+    type: 3}
+  _answerVoiceOverClip: []

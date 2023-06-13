@@ -6,4 +6,11 @@ public static class EventManager
     {
         OnCorrectAnswerSelected?.Invoke();
     }
+
+    public delegate void WrongAnswer();
+    public static event WrongAnswer OnWrongAnswerSelected;
+    public static void Fire_OnWrongAnswerSelected()
+    {
+        OnWrongAnswerSelected?.Invoke();
+    }
 }

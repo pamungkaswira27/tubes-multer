@@ -40,7 +40,8 @@ public class QuizManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("False");
+            GetNextQuestion();
+            EventManager.Fire_OnWrongAnswerSelected();
         }
     }
 

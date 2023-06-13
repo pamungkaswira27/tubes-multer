@@ -25,3 +25,6 @@ MonoBehaviour:
   - Senang bertemu denganmu juga. Saya baik-baik saja, bagaimana dengan Anda?
   - Oh ya, saya baik-baik saja dan Anda?
   - Terima kasih, aku bahagia tanpamu
+  _questionVoiceOverClip: {fileID: 8300000, guid: 763f50fa7d3c5dd43b1d2f49006795a3,
+    type: 3}
+  _answerVoiceOverClip: []
