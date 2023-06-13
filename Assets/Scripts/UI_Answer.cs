@@ -12,13 +12,25 @@ public class UI_Answer : MonoBehaviour
 
     int _answerCount;
 
+    void OnEnable()
+    {
+        EventManager.OnCorrectAnswerSelected += DisplayAnswer;
+    }
+
     void Start()
     {
-        Invoke(nameof(DisplayAnswer), 0.1f);
+        Invoke(nameof(DisplayAnswer), 0.01f);
+    }
+
+    void OnDisable()
+    {
+        EventManager.OnCorrectAnswerSelected -= DisplayAnswer;
     }
 
     void DisplayAnswer()
     {
+        ClearAnswer();
+
         _answerCount = QuizManager.Instance.GetCurrentQuestion().GetAnswerCount();
 
         for (int i = 0; i < _answerCount; i++)
@@ -35,6 +47,14 @@ public class UI_Answer : MonoBehaviour
             _translatedAnswerText.text = QuizManager.Instance.GetCurrentQuestion().GetTranslatedAnswer(i);
 
             translatedAnswer.SetActive(false);
+        }
+    }
+
+    void ClearAnswer()
+    {
+        for (int i = 0; i < _answerParent.childCount; i++)
+        {
+            Destroy(_answerParent.GetChild(i).gameObject);
         }
     }
 }

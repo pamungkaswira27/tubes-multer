@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b55b0c20aca517408f18c03647e0997, type: 3}
+  m_Name: Question 7
+  m_EditorClassIdentifier: 
+  _question: OMG! we live in the same city! Okay, thank you Budi, nice talking to
+    you. Have a great day! See you again!
+  _answers:
+  - Question: My pleasure, I appreciated
+    IsCorrect: 0
+  - Question: Okey Rika, bye!
+    IsCorrect: 0
+  - Question: You're welcome, Rika. It was nice talking to you too. See ya!
+    IsCorrect: 1
+  _translatedQuestion: OMG! kita tinggal di kota yang sama! Oke, terima kasih Budi,
+    senang berbicara dengan Anda. Semoga harimu menyenangkan! Sampai jumpa lagi!
+  _translatedAnswers:
+  - Dengan senang hati, saya menghargai
+  - Okey Rika, sampai jumpa!
+  - Sama-sama, Rika. Senang berbicara dengan Anda juga. Sampai jumpa!

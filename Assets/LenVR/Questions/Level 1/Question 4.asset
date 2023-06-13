@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b55b0c20aca517408f18c03647e0997, type: 3}
-  m_Name: Question 2
+  m_Name: Question 4
   m_EditorClassIdentifier: 
-  _question: My name is Rika, what is your name?
+  _question: I'm fine too. May I know where you're from?
   _answers:
-  - Question: May be Budi
+  - Question: It's good, do you ask?
     IsCorrect: 0
-  - Question: My name is Budi
+  - Question: I live at Indonesia.
+    IsCorrect: 0
+  - Question: Oh yes you can. I'm from Indonesia, and you?
     IsCorrect: 1
-  - Question: Mine is Budi
-    IsCorrect: 0
-  _translatedQuestion: Nama saya Rika, siapa nama anda?
+  _translatedQuestion: Aku juga baik-baik saja. Bolehkah aku tahu dari mana asalmu?
   _translatedAnswers:
-  - Mungkin Budi
-  - Nama saya Budi
-  - Saya Budi
+  - Aku baik, apakah Anda bertanya?
+  - Saya tinggal di Indonesia.
+  - Oh ya, tentu saja boleh. Saya dari Indonesia, dan Anda?

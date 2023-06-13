@@ -6,9 +6,19 @@ public class UI_Question : MonoBehaviour
     [SerializeField] TextMeshProUGUI _questionText;
     [SerializeField] TextMeshProUGUI _translatedQuestionText;
 
+    void OnEnable()
+    {
+        EventManager.OnCorrectAnswerSelected += DisplayQuestion;
+    }
+
     void Start()
     {
-        Invoke(nameof(DisplayQuestion), 0.1f);
+        Invoke(nameof(DisplayQuestion), 0.01f);
+    }
+
+    void OnDisable()
+    {
+        EventManager.OnCorrectAnswerSelected -= DisplayQuestion;
     }
 
     void DisplayQuestion()

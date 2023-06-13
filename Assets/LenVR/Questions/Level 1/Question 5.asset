@@ -10,18 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b55b0c20aca517408f18c03647e0997, type: 3}
-  m_Name: Question 2
+  m_Name: Question 5
   m_EditorClassIdentifier: 
-  _question: My name is Rika, what is your name?
+  _question: I'm from Bandung too. I'm 20 years old and how old are you?
   _answers:
-  - Question: May be Budi
+  - Question: I was born in 2000
     IsCorrect: 0
-  - Question: My name is Budi
+  - Question: I'm 20 years old too
     IsCorrect: 1
-  - Question: Mine is Budi
+  - Question: How old are you?
     IsCorrect: 0
-  _translatedQuestion: Nama saya Rika, siapa nama anda?
+  _translatedQuestion: Saya juga dari Indonesia. Umur saya 20 tahun dan berapa umur
+    Anda?
   _translatedAnswers:
-  - Mungkin Budi
-  - Nama saya Budi
-  - Saya Budi
+  - Saya lahir pada tahun 2000
+  - Saya juga berusia 20 tahun
+  - Berapa usia Anda?

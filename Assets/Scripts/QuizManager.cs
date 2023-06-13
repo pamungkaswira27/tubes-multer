@@ -29,23 +29,30 @@ public class QuizManager : MonoBehaviour
         return _currentQuestion;
     }
 
-    public void GetNextQuestion()
-    {
-        _questionIndex++;
-        _currentQuestion = _levelData.GetQuestion(_questionIndex);
-    }
-
     public void AnswerQuestion(int answerIndex)
     {
         if (_currentQuestion == null) return;
 
         if (_currentQuestion.GetAnswer(answerIndex).IsCorrect)
         {
-            Debug.Log("True");
+            GetNextQuestion();
+            EventManager.Fire_OnCorrectAnswerSelected();
         }
         else
         {
             Debug.Log("False");
         }
+    }
+
+    void GetNextQuestion()
+    {
+        _questionIndex++;
+
+        if (_questionIndex >= _levelData.GetQuestionCount())
+        {
+            return;
+        }
+
+        _currentQuestion = _levelData.GetQuestion(_questionIndex);
     }
 }

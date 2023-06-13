@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b55b0c20aca517408f18c03647e0997, type: 3}
-  m_Name: Question 2
+  m_Name: Question 6
   m_EditorClassIdentifier: 
-  _question: My name is Rika, what is your name?
+  _question: Ah... and you live at?
   _answers:
-  - Question: May be Budi
-    IsCorrect: 0
-  - Question: My name is Budi
+  - Question: I live in Bandung, and you?
     IsCorrect: 1
-  - Question: Mine is Budi
+  - Question: Where do you live too?
     IsCorrect: 0
-  _translatedQuestion: Nama saya Rika, siapa nama anda?
+  - Question: Hm... I don't know
+    IsCorrect: 0
+  _translatedQuestion: Ah... dan Anda tinggal di mana?
   _translatedAnswers:
-  - Mungkin Budi
-  - Nama saya Budi
-  - Saya Budi
+  - Saya tinggal di Bandung, dan Anda?
+  - Di mana Anda tinggal juga?
+  - Hm... Saya tidak tahu
