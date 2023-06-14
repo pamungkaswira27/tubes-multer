@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class UI_Answer : MonoBehaviour
 {
+    [SerializeField] Canvas _answerCanvas;
     [SerializeField] GameObject _answerButtonPrefab;
     [SerializeField] GameObject _translatedAnswerPrefab;
     [SerializeField] Transform _answerParent;
@@ -19,6 +20,7 @@ public class UI_Answer : MonoBehaviour
     {
         EventManager.OnCorrectAnswerSelected += DisplayAnswer;
         EventManager.OnWrongAnswerSelected += DisplayAnswer;
+        EventManager.OnQuestionsAnswered += HideAnswer;
     }
 
     void Start()
@@ -30,6 +32,7 @@ public class UI_Answer : MonoBehaviour
     {
         EventManager.OnCorrectAnswerSelected -= DisplayAnswer;
         EventManager.OnWrongAnswerSelected -= DisplayAnswer;
+        EventManager.OnQuestionsAnswered -= HideAnswer;
     }
 
     void DisplayAnswer()
@@ -59,6 +62,11 @@ public class UI_Answer : MonoBehaviour
 
             translatedAnswer.SetActive(false);
         }
+    }
+
+    void HideAnswer()
+    {
+        _answerCanvas.enabled = false;
     }
 
     void ClearAnswer()

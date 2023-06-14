@@ -1,3 +1,5 @@
+using System;
+
 public static class EventManager
 {
     public delegate void CorrectAnswer();
@@ -12,5 +14,11 @@ public static class EventManager
     public static void Fire_OnWrongAnswerSelected()
     {
         OnWrongAnswerSelected?.Invoke();
+    }
+
+    public static event Action OnQuestionsAnswered;
+    public static void Fire_OnQuestionsAnswered()
+    {
+        OnQuestionsAnswered?.Invoke();
     }
 }

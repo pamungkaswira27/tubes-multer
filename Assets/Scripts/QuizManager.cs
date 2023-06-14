@@ -49,11 +49,13 @@ public class QuizManager : MonoBehaviour
     {
         _questionIndex++;
 
-        if (_questionIndex >= _levelData.GetQuestionCount())
+        if (_questionIndex < _levelData.GetQuestionCount())
         {
-            return;
+            _currentQuestion = _levelData.GetQuestion(_questionIndex);
         }
-
-        _currentQuestion = _levelData.GetQuestion(_questionIndex);
+        else
+        {
+            EventManager.Fire_OnQuestionsAnswered();
+        }
     }
 }

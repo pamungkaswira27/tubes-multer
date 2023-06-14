@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b55b0c20aca517408f18c03647e0997, type: 3}
   m_Name: Question 7
   m_EditorClassIdentifier: 
-  _question: OMG! we live in the same city! Okay, thank you Budi, nice talking to
-    you. Have a great day! See you again!
+  _question: Great! we live in the same city! Okay, thank you Budi, nice talking
+    to you. Have a great day! See you again!
   _answers:
   - Question: My pleasure, I appreciated
     IsCorrect: 0
@@ -21,7 +21,7 @@ MonoBehaviour:
     IsCorrect: 0
   - Question: You're welcome, Rika. It was nice talking to you too. See ya!
     IsCorrect: 1
-  _translatedQuestion: OMG! kita tinggal di kota yang sama! Oke, terima kasih Budi,
+  _translatedQuestion: Bagus! kita tinggal di kota yang sama! Oke, terima kasih Budi,
     senang berbicara dengan Anda. Semoga harimu menyenangkan! Sampai jumpa lagi!
   _translatedAnswers:
   - Dengan senang hati, saya menghargai
