@@ -27,4 +27,7 @@ MonoBehaviour:
   - Saya Budi
   _questionVoiceOverClip: {fileID: 8300000, guid: 4df2b8d3afc88c246a0086c82b063fbe,
     type: 3}
-  _answerVoiceOverClip: []
+  _answerVoiceOverClip:
+  - {fileID: 8300000, guid: 87b142b781c5a4d4688013587085105e, type: 3}
+  - {fileID: 8300000, guid: 9bd4b7b63b16d14498a58804b9ef9ed7, type: 3}
+  - {fileID: 8300000, guid: 61db6c8595b1fee4490024a5d2774699, type: 3}

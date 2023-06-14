@@ -27,4 +27,7 @@ MonoBehaviour:
   - Hm... Saya tidak tahu
   _questionVoiceOverClip: {fileID: 8300000, guid: da8d45f2f0028884ebffd64b5c7d099a,
     type: 3}
-  _answerVoiceOverClip: []
+  _answerVoiceOverClip:
+  - {fileID: 8300000, guid: 1d531de4d8e52a54f8822e4c48818f05, type: 3}
+  - {fileID: 8300000, guid: e1cbd8b44155d8144b704b102cff9645, type: 3}
+  - {fileID: 8300000, guid: 2d229ae0a111291478818db1c4101b21, type: 3}

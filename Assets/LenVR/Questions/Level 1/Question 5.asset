@@ -28,4 +28,7 @@ MonoBehaviour:
   - Berapa usia Anda?
   _questionVoiceOverClip: {fileID: 8300000, guid: 551c71e910793cb4d9c8a6385898b4ae,
     type: 3}
-  _answerVoiceOverClip: []
+  _answerVoiceOverClip:
+  - {fileID: 8300000, guid: 641f865c381e1284cb84425028766657, type: 3}
+  - {fileID: 8300000, guid: 56863e5c05ba1f340b22812937932122, type: 3}
+  - {fileID: 8300000, guid: 2886b7586425ef6499e91cab278537b5, type: 3}

@@ -29,4 +29,7 @@ MonoBehaviour:
   - Sama-sama, Rika. Senang berbicara dengan Anda juga. Sampai jumpa!
   _questionVoiceOverClip: {fileID: 8300000, guid: fc842d52b4f0de243a49dc8d2fb8110c,
     type: 3}
-  _answerVoiceOverClip: []
+  _answerVoiceOverClip:
+  - {fileID: 8300000, guid: 6849448fe5982544d899e0843290684c, type: 3}
+  - {fileID: 8300000, guid: 757260365f9cfb94281d716e21681233, type: 3}
+  - {fileID: 8300000, guid: c7bb6759e6476df408db9f30cda47512, type: 3}

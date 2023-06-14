@@ -27,4 +27,7 @@ MonoBehaviour:
   - Oh ya, tentu saja boleh. Saya dari Indonesia, dan Anda?
   _questionVoiceOverClip: {fileID: 8300000, guid: 95493b86907d0ab4fb0da006aa0d0d68,
     type: 3}
-  _answerVoiceOverClip: []
+  _answerVoiceOverClip:
+  - {fileID: 8300000, guid: 0c45edda52fb0174eade52b58e5674c8, type: 3}
+  - {fileID: 8300000, guid: 3156fd0fb89a83943b6263e67427ca19, type: 3}
+  - {fileID: 8300000, guid: 4643231f99895e648943ac052d6a564d, type: 3}

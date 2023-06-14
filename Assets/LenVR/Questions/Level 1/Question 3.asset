@@ -27,4 +27,7 @@ MonoBehaviour:
   - Terima kasih, aku bahagia tanpamu
   _questionVoiceOverClip: {fileID: 8300000, guid: 763f50fa7d3c5dd43b1d2f49006795a3,
     type: 3}
-  _answerVoiceOverClip: []
+  _answerVoiceOverClip:
+  - {fileID: 8300000, guid: 841b12afcc666524da6e3812a1d09f03, type: 3}
+  - {fileID: 8300000, guid: 175e139d12f94354691dda5bedef7888, type: 3}
+  - {fileID: 8300000, guid: 4dde936cb0591604f9a49f643b4a52af, type: 3}
