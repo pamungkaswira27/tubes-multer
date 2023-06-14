@@ -4,10 +4,19 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
 
+    [Header("Background Music")]
+    [SerializeField] AudioSource _audioSource;
+    [SerializeField] AudioClip _menuBgmClip;
+    [SerializeField] AudioClip _schoolBgmClip;
+
+    [Header("Sound Effect")]
+    [SerializeField] AudioClip _uiClickSfxClip;
+    [SerializeField] AudioClip _correctAnswerSfxClip;
+    [SerializeField] AudioClip _wrongAnswerSfxClip;
+    [SerializeField, Range(0, 1f)] float _sfxVolume;
+
     [Header("Voice Over")]
     [SerializeField, Range(0, 1f)] float _voiceOverVolume;
-
-    Camera _cam;
 
     void Awake()
     {
@@ -23,9 +32,29 @@ public class AudioManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    void Start()
+    public void PlayMenuBackgroundMusic()
     {
-        _cam = Camera.main;
+        PlayBGM(_menuBgmClip);
+    }
+
+    public void PlaySchoolBackgroundMusic()
+    {
+        PlayBGM(_schoolBgmClip);
+    }
+
+    public void PlayClickSoundEffect()
+    {
+        PlayClip(_uiClickSfxClip, _sfxVolume);
+    }
+
+    public void PlayCorrectAnswerSoundEffect()
+    {
+        PlayClip(_correctAnswerSfxClip, _sfxVolume);
+    }
+
+    public void PlayWrongAnswerSoundEffect()
+    {
+        PlayClip(_wrongAnswerSfxClip, _sfxVolume);
     }
 
     public void PlayVoiceOver(AudioClip clip)
@@ -37,8 +66,19 @@ public class AudioManager : MonoBehaviour
     {
         if (clip != null)
         {
-            AudioSource.PlayClipAtPoint(clip, _cam.transform.position, volume);
+            Vector3 camPos = Camera.main.transform.position;
+            AudioSource.PlayClipAtPoint(clip, camPos, volume);
         }
+    }
 
+    void PlayBGM(AudioClip clip)
+    {
+        if (clip != null)
+        {
+            _audioSource.clip = clip;
+            _audioSource.loop = true;
+            _audioSource.playOnAwake = true;
+            _audioSource.Play();
+        }
     }
 }

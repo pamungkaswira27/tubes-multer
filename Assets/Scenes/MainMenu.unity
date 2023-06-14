@@ -276,6 +276,18 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &123924772 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1321777299246074217, guid: b989ae1f311c70a46a200909c808b0ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 1321777298408853694}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efffe29b00ebc2940b666042a89db097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &159095100
 GameObject:
   m_ObjectHideFlags: 0
@@ -1159,6 +1171,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 123924772}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayClickSoundEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &813676788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1764,6 +1788,18 @@ MonoBehaviour:
       - m_Target: {fileID: 7491012804722807042}
         m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
         m_MethodName: LoadGameplayScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 123924772}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayClickSoundEffect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

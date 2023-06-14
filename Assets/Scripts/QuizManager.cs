@@ -16,6 +16,7 @@ public class QuizManager : MonoBehaviour
 
     void Start()
     {
+        AudioManager.Instance.PlaySchoolBackgroundMusic();
         _currentQuestion = _levelData.GetQuestion(_questionIndex);
     }
 
@@ -35,11 +36,13 @@ public class QuizManager : MonoBehaviour
 
         if (_currentQuestion.GetAnswer(answerIndex).IsCorrect)
         {
+            AudioManager.Instance.PlayCorrectAnswerSoundEffect();
             GetNextQuestion();
             EventManager.Fire_OnCorrectAnswerSelected();
         }
         else
         {
+            AudioManager.Instance.PlayWrongAnswerSoundEffect();
             GetNextQuestion();
             EventManager.Fire_OnWrongAnswerSelected();
         }
