@@ -202,8 +202,8 @@ GameObject:
   - component: {fileID: 1078938622}
   - component: {fileID: 1078938621}
   - component: {fileID: 1078938620}
+  - component: {fileID: 5718604346122665384}
   - component: {fileID: 1078938619}
-  - component: {fileID: 1078938623}
   m_Layer: 0
   m_Name: Feedback Canvas
   m_TagString: Untagged
@@ -293,6 +293,25 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &5718604346122665384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078938617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!114 &1078938619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,20 +325,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _headTransform: {fileID: 0}
---- !u!114 &1078938623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1078938617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95640debba0fe91498a94402cc64c03d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _feedbackCanvas: {fileID: 1078938622}
-  _feedbackDuration: 0.5
 --- !u!1 &2571532196635981345
 GameObject:
   m_ObjectHideFlags: 0
