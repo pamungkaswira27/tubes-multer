@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b55b0c20aca517408f18c03647e0997, type: 3}
   m_Name: Question 5
   m_EditorClassIdentifier: 
-  _question: I'm from Bandung too. I'm 20 years old and how old are you?
+  _question: I'm from Indonesia too. I'm 20 years old and how old are you?
   _answers:
   - Question: I was born in 2000
     IsCorrect: 0
