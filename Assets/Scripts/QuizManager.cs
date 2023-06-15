@@ -18,6 +18,8 @@ public class QuizManager : MonoBehaviour
     {
         AudioManager.Instance.PlaySchoolBackgroundMusic();
         _currentQuestion = _levelData.GetQuestion(_questionIndex);
+
+        Invoke(nameof(PlayQuestionVoiceOver), 1f);
     }
 
     public LevelSO GetLevelData()
@@ -55,10 +57,16 @@ public class QuizManager : MonoBehaviour
         if (_questionIndex < _levelData.GetQuestionCount())
         {
             _currentQuestion = _levelData.GetQuestion(_questionIndex);
+            Invoke(nameof(PlayQuestionVoiceOver), 1f);
         }
         else
         {
             EventManager.Fire_OnQuestionsAnswered();
         }
+    }
+
+    void PlayQuestionVoiceOver()
+    {
+        AudioManager.Instance.PlayVoiceOver(_currentQuestion.GetQuestionVoiceOverClip());
     }
 }
