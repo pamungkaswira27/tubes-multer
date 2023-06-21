@@ -1,7 +1,5 @@
 using TMPro;
-using UnityEditor.Events;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class UI_Answer : MonoBehaviour
@@ -61,8 +59,6 @@ public class UI_Answer : MonoBehaviour
 
             Button voiceOverButton = answerButton.GetComponentsInChildren<Button>()[1];
             voiceOverButton.onClick.AddListener(() => AudioManager.Instance.PlayVoiceOver(_currentQuestion.GetAnswerVoiceOverClip(voiceIndex)));
-
-            
 
             translatedAnswer.SetActive(false);
         }
