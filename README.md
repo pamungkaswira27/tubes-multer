@@ -20,3 +20,7 @@ Len VR adalah permainan edukasi dimana pemain akan dihadapkan dengan simulasi ke
 - Ardiya Malik Jaelani as Game Designer
 - Raihan Aulia Rahman as Game Artist
 - Hairunissa Rizka Utiarahman as Game Designer
+
+### Links
+- [Itch.io Page](https://pamungkaswira27.itch.io/len-vr)
+- [Trailer Video](https://youtu.be/P1EeUqOPNec)
